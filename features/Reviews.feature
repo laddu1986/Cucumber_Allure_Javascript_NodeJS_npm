@@ -17,6 +17,7 @@ Feature: Reviews Checks
      Examples:
       |user|password|
       |user@phptravels.com|demouser|
+      |user@phptravels1.com|demouser1|
 
    Scenario: Check the Empty Review Text Error
       When I click on the "product" button

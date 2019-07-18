@@ -12,6 +12,7 @@ When(/^I set the email value \"(.*)\"$/,(emailValue)=>{
 When(/^I click on review text box with (.*) and (.*)$/,function(username, password){
    console.log("Clicking on Review Text Box..! :");
    console.log(`Username : ${username} and Password : ${password}`);
+   
    product.submitBtn.click();
 });
 
@@ -22,10 +23,10 @@ When(/^I set the following login credentials$/,function(dataTable){
 //   console.log("Data : "+dataTable);
    var data = dataTable.raw();
    console.log("data raw :"+data);
-     // data.forEach(function(element) {
-     //        console.log("Element[0]:" + element[0]);
-     //        console.log("Element[1]:" + element[1]);
-     //    });
+      data.forEach(function(element) {
+            console.log("Element[0]:" + element[0]);
+             console.log("Element[1]:" + element[1]);
+         });
 });
 
 Then(/^I should see error message \"(.*)\" for email$/,(errorMessage)=>{
