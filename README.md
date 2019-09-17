@@ -23,3 +23,7 @@ Run the tests :
 npm test
 npm run test -- -t @my-tag
 ```
+
+generate the allure report :  
+
+npm run allure-report
